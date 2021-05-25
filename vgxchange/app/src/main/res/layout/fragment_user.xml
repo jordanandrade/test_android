@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView_helloUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="LOGIN ???"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_profil"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#2B2B2B"
+        android:onClick="onClick"
+        android:text="@string/profil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+    <Button
+        android:id="@+id/button_annoncement"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/annoncement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_profil" />
+
+    <Button
+        android:id="@+id/button_my_proposals"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:background="#2B2B2B"
+        android:backgroundTint="#646464"
+        android:text="@string/my_proposals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_profil" />
+
+    <Button
+        android:id="@+id/button_add_product_page"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Add_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_annoncement" />
+
+    <Button
+        android:id="@+id/button_my_Product_page"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#2B2B2B"
+        android:onClick="onClickMy_Product_page"
+        android:text="@string/My_product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_annoncement" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="onClickLogout"
+        android:text="Déconnexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/received_propositions"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/received_proposals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_my_Product_page" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
